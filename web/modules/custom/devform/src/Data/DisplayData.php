@@ -48,7 +48,7 @@ class DisplayData extends ControllerBase {
     return array(
       '#theme' => 'data_list',
       '#items' => $rows,
-      '#title' => 'All data list'
+      '#title' => $this->t('All data list'),
     );
 
   }

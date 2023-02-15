@@ -1,0 +1,35 @@
+<?php
+
+use Drupal\Core\Database\Database;
+ 
+/**
+ * Implements hook_schema().
+ */
+function devform_schema(){
+    $schema['devform'] = array(
+        'description' => 'The table for storing custom data.',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for content',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'code' => array(
+                'description' => 'custom code for content',
+                'type' => 'int',
+                'length' => 100,
+                'not null' => TRUE,
+            ),
+            'description' => array(
+                'description' => 'Description for the content',
+                'type' => 'text',
+                'size' => 'normal',
+                'not null' => FALSE,
+                'default' => '',
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}

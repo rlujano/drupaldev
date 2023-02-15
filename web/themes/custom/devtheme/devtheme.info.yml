@@ -1,0 +1,15 @@
+name: 'Dev Theme'
+type: theme
+description: 'Dev Theme based on classy theme.'
+core_version_requirement: '^9.4 || ^10'
+'base theme': classy
+libraries:
+  - devtheme/global-styling
+regions:
+  header: Header
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  footer: Footer
+

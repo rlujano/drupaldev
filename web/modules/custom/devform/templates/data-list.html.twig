@@ -1,0 +1,11 @@
+
+{% if items is not empty %}
+  <div class="container-info">
+    {% for item in items %}
+      <div class="item-content">
+        <h2 class="code">{{ item.code }}</h2>
+        <div class="description">{{ item.description.value | raw }}</div>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

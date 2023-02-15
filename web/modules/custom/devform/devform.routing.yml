@@ -1,0 +1,16 @@
+devform.add_data:
+  path: 'admin/dev/form'
+  defaults:
+    _title: 'Add content'
+    _form: '\Drupal\devform\Form\configForm'
+  requirements:
+    _permission: 'administer'
+    _access: 'TRUE'
+
+devform.display_data:
+  path: '/data/devform'
+  defaults:
+    _controller: '\Drupal\devform\Data\DisplayData::display'
+    _title: 'display data'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+name: Dev Form
+type: module
+description: Module for development custom forms.
+core_version_requirement: ^8.8 || ^9
+package: devform

@@ -1,0 +1,11 @@
+devform.add_data:
+  title: 'Add Custom Data'
+  description: 'Form to add custom data'
+  route_name: devform.add_data
+  parent: system.admin_content
+
+devform.display_data:
+  title: 'Show list custom Data'
+  description: 'List and read custom data'
+  route_name: devform.display_data
+  parent: system.admin_content
